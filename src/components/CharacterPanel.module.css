@@ -1,0 +1,167 @@
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  background: #1a1a1a;
+  border-left: 1px solid #2a2a2a;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 24px 20px 40px;
+  box-sizing: border-box;
+  animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: 1px solid #333;
+  color: #888;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.close:hover {
+  color: #fff;
+  border-color: #555;
+}
+
+.accent {
+  width: 32px;
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin: 0 0 12px;
+  line-height: 1.2;
+  padding-right: 32px;
+}
+
+.description {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+}
+
+.bookList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bookItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bookDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bookTitle {
+  font-size: 13px;
+  color: #ccc;
+  flex: 1;
+}
+
+.bookYear {
+  font-size: 12px;
+  color: #555;
+}
+
+.interactionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interactionItem {
+  border-left: 2px solid #2a2a2a;
+  padding-left: 12px;
+}
+
+.interactionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.characterLink {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e0e0e0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #444;
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.characterLink:hover {
+  color: #fff;
+  text-decoration-color: #888;
+}
+
+.bookTag {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.interactionDesc {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.55;
+  margin: 0;
+}

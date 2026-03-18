@@ -1,0 +1,645 @@
+{
+  "books": [
+    { "id": "player-piano", "title": "Player Piano", "year": 1952, "color": "#E76F51" },
+    { "id": "sirens-of-titan", "title": "The Sirens of Titan", "year": 1959, "color": "#9B5DE5" },
+    { "id": "mother-night", "title": "Mother Night", "year": 1962, "color": "#4A5568" },
+    { "id": "cats-cradle", "title": "Cat's Cradle", "year": 1963, "color": "#48BB78" },
+    { "id": "god-bless-you", "title": "God Bless You, Mr. Rosewater", "year": 1965, "color": "#F6AD55" },
+    { "id": "slaughterhouse-five", "title": "Slaughterhouse-Five", "year": 1969, "color": "#4299E1" },
+    { "id": "breakfast-of-champions", "title": "Breakfast of Champions", "year": 1973, "color": "#FC8181" },
+    { "id": "jailbird", "title": "Jailbird", "year": 1979, "color": "#B794F4" },
+    { "id": "deadeye-dick", "title": "Deadeye Dick", "year": 1982, "color": "#76E4F7" },
+    { "id": "galapagos", "title": "Galápagos", "year": 1985, "color": "#68D391" },
+    { "id": "timequake", "title": "Timequake", "year": 1997, "color": "#FBD38D" }
+  ],
+  "characters": [
+    {
+      "id": "kilgore-trout",
+      "name": "Kilgore Trout",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["god-bless-you", "slaughterhouse-five", "breakfast-of-champions", "jailbird", "deadeye-dick", "galapagos", "timequake"],
+      "description": "A prolific but largely unread science fiction writer. Vonnegut's most recurring character, appearing across seven novels."
+    },
+    {
+      "id": "eliot-rosewater",
+      "name": "Eliot Rosewater",
+      "primaryBook": "god-bless-you",
+      "books": ["god-bless-you", "slaughterhouse-five"],
+      "description": "Millionaire philanthropist and president of the Rosewater Foundation, who gives money to anyone who needs it."
+    },
+    {
+      "id": "howard-campbell",
+      "name": "Howard W. Campbell Jr.",
+      "primaryBook": "mother-night",
+      "books": ["mother-night", "slaughterhouse-five"],
+      "description": "An American playwright who becomes a Nazi propagandist while secretly working as a spy for the US government."
+    },
+    {
+      "id": "billy-pilgrim",
+      "name": "Billy Pilgrim",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "A WWII veteran and optometrist who has become 'unstuck in time,' experiencing his life in non-linear order."
+    },
+    {
+      "id": "montana-wildhack",
+      "name": "Montana Wildhack",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "A movie star abducted by the Tralfamadorians and placed in the same zoo habitat as Billy Pilgrim."
+    },
+    {
+      "id": "valencia-merble",
+      "name": "Valencia Merble",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "Billy Pilgrim's devoted wife, who dies of carbon monoxide poisoning while rushing to visit Billy in hospital."
+    },
+    {
+      "id": "edgar-derby",
+      "name": "Edgar Derby",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "A high school teacher and POW who is executed by firing squad for looting a teapot from the ruins of Dresden."
+    },
+    {
+      "id": "paul-lazzaro",
+      "name": "Paul Lazzaro",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "A bitter, vengeful American POW who vows to have Billy Pilgrim killed after the war."
+    },
+    {
+      "id": "roland-weary",
+      "name": "Roland Weary",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "An anti-tank gunner who blames Billy Pilgrim for his capture and death, igniting Lazzaro's vendetta."
+    },
+    {
+      "id": "dwayne-hoover",
+      "name": "Dwayne Hoover",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["breakfast-of-champions", "deadeye-dick"],
+      "description": "A wealthy Pontiac dealer in Midland City who is going insane, in part after reading Kilgore Trout's novel."
+    },
+    {
+      "id": "francine-pefko",
+      "name": "Francine Pefko",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["breakfast-of-champions"],
+      "description": "Dwayne Hoover's secretary and mistress at the Pontiac dealership."
+    },
+    {
+      "id": "bunny-hoover",
+      "name": "Bunny Hoover",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["breakfast-of-champions"],
+      "description": "Dwayne Hoover's gay son, who plays piano at the Holiday Inn lounge and is estranged from his father."
+    },
+    {
+      "id": "harry-lesabre",
+      "name": "Harry LeSabre",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["breakfast-of-champions"],
+      "description": "Dwayne Hoover's sales manager, who hides a secret passion for cross-dressing."
+    },
+    {
+      "id": "rabo-karabekian",
+      "name": "Rabo Karabekian",
+      "primaryBook": "breakfast-of-champions",
+      "books": ["breakfast-of-champions"],
+      "description": "A minimalist painter whose controversial painting at the Midland City arts festival sparks outrage."
+    },
+    {
+      "id": "helga-noth",
+      "name": "Helga Noth",
+      "primaryBook": "mother-night",
+      "books": ["mother-night"],
+      "description": "Howard Campbell's beloved German wife, who disappears during the Soviet advance near the end of WWII."
+    },
+    {
+      "id": "resi-noth",
+      "name": "Resi Noth",
+      "primaryBook": "mother-night",
+      "books": ["mother-night"],
+      "description": "Helga's younger sister, who resurfaces after the war impersonating Helga to get close to Howard Campbell."
+    },
+    {
+      "id": "george-kraft",
+      "name": "George Kraft",
+      "primaryBook": "mother-night",
+      "books": ["mother-night"],
+      "description": "Howard Campbell's friendly neighbor and chess partner in New York, who is secretly a Soviet spy named Ivan Yankovy."
+    },
+    {
+      "id": "frank-wirtanen",
+      "name": "Frank Wirtanen",
+      "primaryBook": "mother-night",
+      "books": ["mother-night"],
+      "description": "The American intelligence officer who recruits Howard Campbell as a spy and holds the secret to his innocence."
+    },
+    {
+      "id": "eliot-rosewater-sr",
+      "name": "Senator Lister Rosewater",
+      "primaryBook": "god-bless-you",
+      "books": ["god-bless-you"],
+      "description": "Eliot Rosewater's conservative, patrician father, a US Senator who is appalled by his son's philanthropy."
+    },
+    {
+      "id": "sylvia-rosewater",
+      "name": "Sylvia Rosewater",
+      "primaryBook": "god-bless-you",
+      "books": ["god-bless-you"],
+      "description": "Eliot's aristocratic wife, who suffers a nervous breakdown from her husband's erratic generosity."
+    },
+    {
+      "id": "norman-mushari",
+      "name": "Norman Mushari",
+      "primaryBook": "god-bless-you",
+      "books": ["god-bless-you"],
+      "description": "An ambitious young lawyer scheming to have Eliot declared insane in order to redirect the Rosewater fortune."
+    },
+    {
+      "id": "fred-rosewater",
+      "name": "Fred Rosewater",
+      "primaryBook": "god-bless-you",
+      "books": ["god-bless-you"],
+      "description": "A distant Rosewater cousin in Rhode Island whom Mushari hopes to make the new heir to the fortune."
+    },
+    {
+      "id": "john-jonah",
+      "name": "John (Jonah)",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "The narrator, a writer researching what important Americans were doing on the day the atomic bomb was dropped."
+    },
+    {
+      "id": "frank-hoenikker",
+      "name": "Frank Hoenikker",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "Son of ice-nine's inventor, who becomes Minister of Science on San Lorenzo and offers John the presidency."
+    },
+    {
+      "id": "angela-hoenikker",
+      "name": "Angela Hoenikker",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "Felix Hoenikker's eldest daughter, who sacrificed her youth caring for her father and carries a chip of ice-nine."
+    },
+    {
+      "id": "newt-hoenikker",
+      "name": "Newton Hoenikker",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "Felix Hoenikker's dwarf son, who corresponds with John and unknowingly helps trigger the apocalypse."
+    },
+    {
+      "id": "mona-monzano",
+      "name": "Mona Aamons Monzano",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "The beautiful adopted daughter of San Lorenzo's dictator, a Bokononist saint and John's love interest."
+    },
+    {
+      "id": "papa-monzano",
+      "name": "'Papa' Monzano",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "The dying dictator of San Lorenzo, who uses ice-nine to commit suicide, triggering a global catastrophe."
+    },
+    {
+      "id": "bokonon",
+      "name": "Bokonon",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "The founder of Bokononism, a religion built on 'foma' (comforting lies), officially outlawed but secretly tolerated on San Lorenzo."
+    },
+    {
+      "id": "malachi-constant",
+      "name": "Malachi Constant",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "The richest man in America, who is drawn into Winston Rumfoord's manipulations and ends up on Mars, Mercury, and Titan."
+    },
+    {
+      "id": "winston-rumfoord",
+      "name": "Winston Niles Rumfoord",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "A billionaire who flew his spaceship into a chrono-synclastic infundibulum, becoming a wave phenomenon spread across space."
+    },
+    {
+      "id": "beatrice-rumfoord",
+      "name": "Beatrice Rumfoord",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "Winston's haughty wife, who is manipulated by her husband's machinations into becoming Malachi's mate on Mars."
+    },
+    {
+      "id": "salo",
+      "name": "Salo",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "A Tralfamadorian robot stranded on Titan for millennia, waiting for a replacement part—the true cause of all human history."
+    },
+    {
+      "id": "paul-proteus",
+      "name": "Paul Proteus",
+      "primaryBook": "player-piano",
+      "books": ["player-piano"],
+      "description": "A brilliant engineer and manager who grows disillusioned with the automated society he helps maintain."
+    },
+    {
+      "id": "anita-proteus",
+      "name": "Anita Proteus",
+      "primaryBook": "player-piano",
+      "books": ["player-piano"],
+      "description": "Paul's ambitious wife, who married him for his status and becomes increasingly estranged as he rebels."
+    },
+    {
+      "id": "ed-finnerty",
+      "name": "Ed Finnerty",
+      "primaryBook": "player-piano",
+      "books": ["player-piano"],
+      "description": "Paul's old friend from engineering school, who has quit his prestigious job and become a rebel against the system."
+    },
+    {
+      "id": "rudy-waltz",
+      "name": "Rudy Waltz",
+      "primaryBook": "deadeye-dick",
+      "books": ["deadeye-dick"],
+      "description": "A pharmacist in Midland City who accidentally killed a pregnant woman with a rifle shot as a child, haunted by guilt."
+    },
+    {
+      "id": "felix-waltz",
+      "name": "Felix Waltz",
+      "primaryBook": "deadeye-dick",
+      "books": ["deadeye-dick"],
+      "description": "Rudy's father, an admirer of Hitler and failed artist who befriended him in Vienna, leaving the family with a firearms collection."
+    },
+    {
+      "id": "walter-starbuck",
+      "name": "Walter F. Starbuck",
+      "primaryBook": "jailbird",
+      "books": ["jailbird"],
+      "description": "A Harvard-educated government official who served time for his peripheral role in Watergate."
+    },
+    {
+      "id": "mary-kathleen",
+      "name": "Mary Kathleen O'Looney",
+      "primaryBook": "jailbird",
+      "books": ["jailbird"],
+      "description": "Walter's college sweetheart who becomes a bag lady — and secretly the controlling shareholder of a massive corporation."
+    },
+    {
+      "id": "leon-trout",
+      "name": "Leon Trout",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "Kilgore Trout's son, a ghost narrator who observes humanity's evolution over one million years from the Galápagos Islands."
+    },
+    {
+      "id": "mary-hepburn",
+      "name": "Mary Hepburn",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "A widowed biology teacher who becomes the unlikely mother of humanity's next evolutionary branch on Santa Rosalia island."
+    },
+    {
+      "id": "monica-pepper",
+      "name": "Monica Pepper",
+      "primaryBook": "timequake",
+      "books": ["timequake"],
+      "description": "Works at the Xanadu writers' retreat and is one of the people Kilgore Trout helps after the timequake's rerun ends."
+    },
+    {
+      "id": "kurt-vonnegut",
+      "name": "Kurt Vonnegut",
+      "primaryBook": "timequake",
+      "books": ["slaughterhouse-five", "breakfast-of-champions", "timequake"],
+      "description": "The author himself, who appears as a character in several of his own novels, blurring the line between fiction and autobiography."
+    }
+  ],
+  "interactions": [
+    {
+      "source": "billy-pilgrim",
+      "target": "montana-wildhack",
+      "book": "slaughterhouse-five",
+      "description": "Billy and Montana are placed together in a Tralfamadorian zoo, where they become companions and have a child."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "valencia-merble",
+      "book": "slaughterhouse-five",
+      "description": "Billy and Valencia are married. She dies rushing to see him in hospital after his plane crash."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "edgar-derby",
+      "book": "slaughterhouse-five",
+      "description": "Both are American POWs sheltered in Dresden's Slaughterhouse-Five during the firebombing."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "paul-lazzaro",
+      "book": "slaughterhouse-five",
+      "description": "Lazzaro blames Billy (at Roland Weary's dying request) for Weary's death and vows to have him killed."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "roland-weary",
+      "book": "slaughterhouse-five",
+      "description": "Weary drags Billy through the snow during capture, blaming him when he dies of gangrene in a POW boxcar."
+    },
+    {
+      "source": "paul-lazzaro",
+      "target": "roland-weary",
+      "book": "slaughterhouse-five",
+      "description": "Lazzaro and Weary bond as fellow POWs; Weary's dying words instruct Lazzaro to avenge him against Billy."
+    },
+    {
+      "source": "edgar-derby",
+      "target": "roland-weary",
+      "book": "slaughterhouse-five",
+      "description": "Both are American POWs transported together in the same boxcar to Dresden."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "howard-campbell",
+      "book": "slaughterhouse-five",
+      "description": "Campbell appears in Dresden to recruit American POWs to fight for Germany; Billy witnesses this."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "kilgore-trout",
+      "book": "slaughterhouse-five",
+      "description": "Billy discovers Trout's novels in a Times Square porn shop and becomes a devoted fan; they later meet at Billy's anniversary party."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "eliot-rosewater",
+      "book": "slaughterhouse-five",
+      "description": "Billy and Eliot share a ward in a veterans' hospital and bond over Kilgore Trout's science fiction novels."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "kilgore-trout",
+      "book": "slaughterhouse-five",
+      "description": "Eliot introduces Billy to Trout's work while they are both recovering in the veterans' hospital."
+    },
+    {
+      "source": "kurt-vonnegut",
+      "target": "billy-pilgrim",
+      "book": "slaughterhouse-five",
+      "description": "Vonnegut inserts himself into the Dresden scenes, briefly appearing as a soldier among the POWs."
+    },
+    {
+      "source": "dwayne-hoover",
+      "target": "kilgore-trout",
+      "book": "breakfast-of-champions",
+      "description": "Dwayne reads Trout's novel 'Now It Can Be Told' and, taking it literally, attacks several people including Trout himself."
+    },
+    {
+      "source": "dwayne-hoover",
+      "target": "francine-pefko",
+      "book": "breakfast-of-champions",
+      "description": "Dwayne and Francine are in a long-term affair; she is devoted to him despite his deteriorating mental state."
+    },
+    {
+      "source": "dwayne-hoover",
+      "target": "bunny-hoover",
+      "book": "breakfast-of-champions",
+      "description": "Dwayne is estranged from his gay son Bunny, who performs piano nearby but keeps emotional distance from his father."
+    },
+    {
+      "source": "dwayne-hoover",
+      "target": "harry-lesabre",
+      "book": "breakfast-of-champions",
+      "description": "Harry is Dwayne's loyal sales manager; Dwayne's breakdown puts their professional relationship in crisis."
+    },
+    {
+      "source": "kilgore-trout",
+      "target": "rabo-karabekian",
+      "book": "breakfast-of-champions",
+      "description": "Trout and Karabekian both attend the Midland City arts festival and interact in the hotel bar."
+    },
+    {
+      "source": "kurt-vonnegut",
+      "target": "kilgore-trout",
+      "book": "breakfast-of-champions",
+      "description": "Vonnegut appears as a character who watches over Trout throughout the novel and finally meets him in the bar, granting him freedom."
+    },
+    {
+      "source": "kurt-vonnegut",
+      "target": "dwayne-hoover",
+      "book": "breakfast-of-champions",
+      "description": "Vonnegut observes Dwayne's unraveling throughout the novel as an authorial presence in Midland City."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "kilgore-trout",
+      "book": "god-bless-you",
+      "description": "Eliot is Trout's most devoted fan and has read everything Trout ever wrote; he summons Trout to Rosewater County."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "sylvia-rosewater",
+      "book": "god-bless-you",
+      "description": "Eliot and Sylvia are married, but his obsessive philanthropy drives her to a nervous breakdown and eventual separation."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "eliot-rosewater-sr",
+      "book": "god-bless-you",
+      "description": "The Senator is horrified by his son's behavior and is torn between familial love and embarrassment at Eliot's philanthropy."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "norman-mushari",
+      "book": "god-bless-you",
+      "description": "Mushari plots to have Eliot declared insane in order to redirect the Rosewater fortune to a distant relative."
+    },
+    {
+      "source": "eliot-rosewater",
+      "target": "fred-rosewater",
+      "book": "god-bless-you",
+      "description": "Eliot ultimately acknowledges all the children in Rosewater County as his own, thwarting Mushari's plan to install Fred as heir."
+    },
+    {
+      "source": "norman-mushari",
+      "target": "fred-rosewater",
+      "book": "god-bless-you",
+      "description": "Mushari seeks out Fred as the intended beneficiary of his scheme to break the Rosewater Foundation's trust."
+    },
+    {
+      "source": "howard-campbell",
+      "target": "helga-noth",
+      "book": "mother-night",
+      "description": "Howard and Helga are deeply in love; he calls their marriage a 'nation of two.' She disappears near the end of the war."
+    },
+    {
+      "source": "howard-campbell",
+      "target": "resi-noth",
+      "book": "mother-night",
+      "description": "Resi impersonates Helga to get close to Howard; he falls in love with her before discovering she is a Soviet agent."
+    },
+    {
+      "source": "howard-campbell",
+      "target": "george-kraft",
+      "book": "mother-night",
+      "description": "Howard and Kraft are close friends and chess partners in New York; Kraft is later revealed to be a Soviet spy."
+    },
+    {
+      "source": "howard-campbell",
+      "target": "frank-wirtanen",
+      "book": "mother-night",
+      "description": "Wirtanen recruits Howard as a spy and is the only person who can confirm Howard's innocence — but declines to testify."
+    },
+    {
+      "source": "george-kraft",
+      "target": "resi-noth",
+      "book": "mother-night",
+      "description": "Kraft and Resi are both Soviet agents working together in New York, using Howard Campbell for their own ends."
+    },
+    {
+      "source": "john-jonah",
+      "target": "frank-hoenikker",
+      "book": "cats-cradle",
+      "description": "John travels to San Lorenzo and finds Frank, who offers him the presidency of the island in exchange for marrying Mona."
+    },
+    {
+      "source": "john-jonah",
+      "target": "angela-hoenikker",
+      "book": "cats-cradle",
+      "description": "John interviews Angela as part of his research into her father Felix's life on the day of the atomic bomb."
+    },
+    {
+      "source": "john-jonah",
+      "target": "newt-hoenikker",
+      "book": "cats-cradle",
+      "description": "Newt corresponds with John about his father Felix and later meets him in San Lorenzo."
+    },
+    {
+      "source": "john-jonah",
+      "target": "mona-monzano",
+      "book": "cats-cradle",
+      "description": "John falls in love with Mona and agrees to become San Lorenzo's president partly to be with her."
+    },
+    {
+      "source": "john-jonah",
+      "target": "papa-monzano",
+      "book": "cats-cradle",
+      "description": "John meets 'Papa' on his deathbed; Papa uses ice-nine to commit suicide, causing worldwide catastrophe."
+    },
+    {
+      "source": "frank-hoenikker",
+      "target": "papa-monzano",
+      "book": "cats-cradle",
+      "description": "Frank gave Papa a chip of ice-nine in exchange for his ministerial position and Mona's hand for John."
+    },
+    {
+      "source": "frank-hoenikker",
+      "target": "mona-monzano",
+      "book": "cats-cradle",
+      "description": "Frank was engaged to Mona before offering her to John as part of the presidential deal."
+    },
+    {
+      "source": "bokonon",
+      "target": "papa-monzano",
+      "book": "cats-cradle",
+      "description": "Bokonon and Papa co-founded the religion of Bokononism and its theatrical illegality to give the people of San Lorenzo meaning."
+    },
+    {
+      "source": "malachi-constant",
+      "target": "winston-rumfoord",
+      "book": "sirens-of-titan",
+      "description": "Rumfoord manipulates Malachi's entire life, having foreseen his destiny as part of a grand scheme culminating on Titan."
+    },
+    {
+      "source": "malachi-constant",
+      "target": "beatrice-rumfoord",
+      "book": "sirens-of-titan",
+      "description": "Malachi and Beatrice are manipulated into becoming mates on Mars; they have a son and eventually find peace on Titan."
+    },
+    {
+      "source": "winston-rumfoord",
+      "target": "beatrice-rumfoord",
+      "book": "sirens-of-titan",
+      "description": "Winston uses his foreknowledge to manipulate his own wife's life, sacrificing her happiness for his cosmic scheme."
+    },
+    {
+      "source": "winston-rumfoord",
+      "target": "salo",
+      "book": "sirens-of-titan",
+      "description": "Rumfoord and Salo become genuine friends on Titan; Rumfoord's entire scheme was unconsciously engineered by Tralfamadore to help Salo."
+    },
+    {
+      "source": "malachi-constant",
+      "target": "salo",
+      "book": "sirens-of-titan",
+      "description": "Salo befriends Malachi in his final years on Titan and, out of compassion, uses Tralfamadorian technology to give him a final vision of happiness."
+    },
+    {
+      "source": "paul-proteus",
+      "target": "anita-proteus",
+      "book": "player-piano",
+      "description": "Paul and Anita's marriage deteriorates as his disillusionment with the technocratic system grows and she clings to their status."
+    },
+    {
+      "source": "paul-proteus",
+      "target": "ed-finnerty",
+      "book": "player-piano",
+      "description": "Ed reappears in Paul's life as a dropout from the system, encouraging Paul to question everything and eventually rebel."
+    },
+    {
+      "source": "rudy-waltz",
+      "target": "felix-waltz",
+      "book": "deadeye-dick",
+      "description": "Felix's firearms obsession gives Rudy access to the guns; the accidental shooting defines both their lives and legacies."
+    },
+    {
+      "source": "rudy-waltz",
+      "target": "kilgore-trout",
+      "book": "deadeye-dick",
+      "description": "Kilgore Trout briefly appears in Midland City as part of the background of Rudy's world."
+    },
+    {
+      "source": "walter-starbuck",
+      "target": "mary-kathleen",
+      "book": "jailbird",
+      "description": "Walter and Mary Kathleen were college sweethearts separated by class and circumstance; he discovers she is secretly the world's most powerful businesswoman."
+    },
+    {
+      "source": "kilgore-trout",
+      "target": "walter-starbuck",
+      "book": "jailbird",
+      "description": "Trout makes a brief appearance as a fellow inmate or background figure in Walter Starbuck's post-prison world."
+    },
+    {
+      "source": "leon-trout",
+      "target": "mary-hepburn",
+      "book": "galapagos",
+      "description": "Leon's ghost narrates Mary's story across a million years; she becomes the unwitting matriarch of humanity's next form."
+    },
+    {
+      "source": "kilgore-trout",
+      "target": "leon-trout",
+      "book": "galapagos",
+      "description": "Kilgore Trout's ghost briefly appears to Leon, his son, offering him a chance to pass through the blue tunnel to the afterlife."
+    },
+    {
+      "source": "kilgore-trout",
+      "target": "monica-pepper",
+      "book": "timequake",
+      "description": "After the timequake's rerun ends and free will resumes, Trout rallies people including Monica with his cry 'You were sick, but now you're well.'"
+    },
+    {
+      "source": "kilgore-trout",
+      "target": "kurt-vonnegut",
+      "book": "timequake",
+      "description": "Vonnegut writes himself into Timequake as Trout's nephew-like companion, blurring the boundary between author and creation."
+    }
+  ]
+}

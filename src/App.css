@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+  color: #f0f0f0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.graph-area {
+  flex: 1;
+  position: relative;
+  margin-left: 260px;
+}
+
+.title-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.title-bar h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e0e0e0;
+  letter-spacing: 0.02em;
+}
+
+.title-bar p {
+  font-size: 12px;
+  color: #555;
+  margin-top: 3px;
+}
