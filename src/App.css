@@ -46,3 +46,43 @@ body {
   color: #555;
   margin-top: 3px;
 }
+
+.filter-overlay {
+  display: none;
+}
+
+.filter-fab {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .graph-area {
+    margin-left: 0;
+  }
+
+  .filter-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  .filter-fab {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 150;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  }
+}

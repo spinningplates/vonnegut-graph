@@ -1,10 +1,10 @@
 import styles from './BookFilter.module.css';
 
-export default function BookFilter({ books, activeBooks, onToggleBook }) {
+export default function BookFilter({ books, activeBooks, onToggleBook, isOpen, onClose }) {
   const allActive = activeBooks.size === 0;
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isOpen ? styles.open : ''}`}>
       <div className={styles.header}>
         <span className={styles.label}>Filter by Book</span>
         {!allActive && (

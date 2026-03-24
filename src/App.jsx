@@ -10,6 +10,7 @@ const bookMap = Object.fromEntries(data.books.map(b => [b.id, b]));
 export default function App() {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
   const [activeBooks, setActiveBooks] = useState(new Set());
+  const [showFilter, setShowFilter] = useState(false);
 
   const graphData = useMemo(() => {
     const nodes = data.characters.map(c => ({ ...c }));
@@ -47,10 +48,16 @@ export default function App() {
 
   return (
     <div className="app">
+      {showFilter && (
+        <div className="filter-overlay" onClick={() => setShowFilter(false)} />
+      )}
+
       <BookFilter
         books={data.books}
         activeBooks={activeBooks}
         onToggleBook={handleToggleBook}
+        isOpen={showFilter}
+        onClose={() => setShowFilter(false)}
       />
 
       <div className="graph-area">
@@ -75,6 +82,14 @@ export default function App() {
         onClose={() => setSelectedCharacter(null)}
         onSelectCharacter={handleSelectByNode}
       />
+
+      <button
+        className="filter-fab"
+        onClick={() => setShowFilter(v => !v)}
+        aria-label="Toggle book filter"
+      >
+        {activeBooks.size > 0 ? `Books (${activeBooks.size})` : 'Books'}
+      </button>
     </div>
   );
 }
