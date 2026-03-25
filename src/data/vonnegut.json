@@ -7,9 +7,12 @@
     { "id": "god-bless-you", "title": "God Bless You, Mr. Rosewater", "year": 1965, "color": "#F6AD55" },
     { "id": "slaughterhouse-five", "title": "Slaughterhouse-Five", "year": 1969, "color": "#4299E1" },
     { "id": "breakfast-of-champions", "title": "Breakfast of Champions", "year": 1973, "color": "#FC8181" },
+    { "id": "slapstick", "title": "Slapstick", "year": 1976, "color": "#F687B3" },
     { "id": "jailbird", "title": "Jailbird", "year": 1979, "color": "#B794F4" },
     { "id": "deadeye-dick", "title": "Deadeye Dick", "year": 1982, "color": "#76E4F7" },
     { "id": "galapagos", "title": "Galápagos", "year": 1985, "color": "#68D391" },
+    { "id": "bluebeard", "title": "Bluebeard", "year": 1987, "color": "#7F9CF5" },
+    { "id": "hocus-pocus", "title": "Hocus Pocus", "year": 1990, "color": "#F6E05E" },
     { "id": "timequake", "title": "Timequake", "year": 1997, "color": "#FBD38D" }
   ],
   "characters": [
@@ -77,6 +80,13 @@
       "description": "An anti-tank gunner who blames Billy Pilgrim for his capture and death, igniting Lazzaro's vendetta."
     },
     {
+      "id": "barbara-pilgrim",
+      "name": "Barbara Pilgrim",
+      "primaryBook": "slaughterhouse-five",
+      "books": ["slaughterhouse-five"],
+      "description": "Billy Pilgrim's daughter, who is exasperated by her father's increasingly strange behavior and public claims about time travel."
+    },
+    {
       "id": "dwayne-hoover",
       "name": "Dwayne Hoover",
       "primaryBook": "breakfast-of-champions",
@@ -107,9 +117,9 @@
     {
       "id": "rabo-karabekian",
       "name": "Rabo Karabekian",
-      "primaryBook": "breakfast-of-champions",
-      "books": ["breakfast-of-champions"],
-      "description": "A minimalist painter whose controversial painting at the Midland City arts festival sparks outrage."
+      "primaryBook": "bluebeard",
+      "books": ["breakfast-of-champions", "bluebeard"],
+      "description": "An Abstract Expressionist painter of Armenian descent whose controversial career culminates in a vast secret masterpiece hidden in his potato barn."
     },
     {
       "id": "helga-noth",
@@ -138,6 +148,13 @@
       "primaryBook": "mother-night",
       "books": ["mother-night"],
       "description": "The American intelligence officer who recruits Howard Campbell as a spy and holds the secret to his innocence."
+    },
+    {
+      "id": "dr-lionel-jones",
+      "name": "Dr. Lionel Jones",
+      "primaryBook": "mother-night",
+      "books": ["mother-night"],
+      "description": "A white supremacist dentist and publisher of neo-Nazi materials who idolizes Howard Campbell's wartime broadcasts."
     },
     {
       "id": "eliot-rosewater-sr",
@@ -173,6 +190,13 @@
       "primaryBook": "cats-cradle",
       "books": ["cats-cradle"],
       "description": "The narrator, a writer researching what important Americans were doing on the day the atomic bomb was dropped."
+    },
+    {
+      "id": "felix-hoenikker",
+      "name": "Felix Hoenikker",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "The absent-minded physicist who co-invented the atomic bomb and secretly created ice-nine, a substance that could freeze all the world's water."
     },
     {
       "id": "frank-hoenikker",
@@ -217,6 +241,20 @@
       "description": "The founder of Bokononism, a religion built on 'foma' (comforting lies), officially outlawed but secretly tolerated on San Lorenzo."
     },
     {
+      "id": "julian-castle",
+      "name": "Julian Castle",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "A former millionaire playboy who renounced his fortune to establish a free jungle hospital on San Lorenzo, cynical but genuinely devoted to the poor."
+    },
+    {
+      "id": "philip-castle",
+      "name": "Philip Castle",
+      "primaryBook": "cats-cradle",
+      "books": ["cats-cradle"],
+      "description": "Julian's son, who runs the Casa Mona hotel and wrote the definitive history of San Lorenzo; a devout Bokononist."
+    },
+    {
       "id": "malachi-constant",
       "name": "Malachi Constant",
       "primaryBook": "sirens-of-titan",
@@ -245,6 +283,20 @@
       "description": "A Tralfamadorian robot stranded on Titan for millennia, waiting for a replacement part—the true cause of all human history."
     },
     {
+      "id": "boaz",
+      "name": "Boaz",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "Malachi's companion soldier on Mars, who discovers he can control harmoniums — creatures that live on vibration — and chooses to remain on Mercury rather than return to Earth."
+    },
+    {
+      "id": "chrono",
+      "name": "Chrono",
+      "primaryBook": "sirens-of-titan",
+      "books": ["sirens-of-titan"],
+      "description": "The son born to Malachi and Beatrice on Mars, who becomes a revered primitive figure on Earth before flying off with migrating birds."
+    },
+    {
       "id": "paul-proteus",
       "name": "Paul Proteus",
       "primaryBook": "player-piano",
@@ -266,18 +318,18 @@
       "description": "Paul's old friend from engineering school, who has quit his prestigious job and become a rebel against the system."
     },
     {
-      "id": "rudy-waltz",
-      "name": "Rudy Waltz",
-      "primaryBook": "deadeye-dick",
-      "books": ["deadeye-dick"],
-      "description": "A pharmacist in Midland City who accidentally killed a pregnant woman with a rifle shot as a child, haunted by guilt."
+      "id": "reverend-lasher",
+      "name": "Reverend James Lasher",
+      "primaryBook": "player-piano",
+      "books": ["player-piano"],
+      "description": "A former social scientist turned minister who becomes the ideological mastermind behind the Ghost Shirt Society's rebellion against the automated state."
     },
     {
-      "id": "felix-waltz",
-      "name": "Felix Waltz",
-      "primaryBook": "deadeye-dick",
-      "books": ["deadeye-dick"],
-      "description": "Rudy's father, an admirer of Hitler and failed artist who befriended him in Vienna, leaving the family with a firearms collection."
+      "id": "shah-of-bratpuhr",
+      "name": "The Shah of Bratpuhr",
+      "primaryBook": "player-piano",
+      "books": ["player-piano"],
+      "description": "A spiritual leader from a distant nation touring automated America, who sees through its prosperity and refers to its citizens as 'takaru' — slaves."
     },
     {
       "id": "walter-starbuck",
@@ -294,6 +346,41 @@
       "description": "Walter's college sweetheart who becomes a bag lady — and secretly the controlling shareholder of a massive corporation."
     },
     {
+      "id": "ruth-starbuck",
+      "name": "Ruth Starbuck",
+      "primaryBook": "jailbird",
+      "books": ["jailbird"],
+      "description": "Walter's devoted wife, a Holocaust survivor and concentration camp librarian who died while he was in prison, leaving him haunted by guilt."
+    },
+    {
+      "id": "leland-clewes",
+      "name": "Leland Clewes",
+      "primaryBook": "jailbird",
+      "books": ["jailbird"],
+      "description": "Walter's old Harvard friend whose career was destroyed when Walter named him as a communist before the HUAC; their paths cross again after both have suffered."
+    },
+    {
+      "id": "rudy-waltz",
+      "name": "Rudy Waltz",
+      "primaryBook": "deadeye-dick",
+      "books": ["deadeye-dick"],
+      "description": "A pharmacist in Midland City who accidentally killed a pregnant woman with a rifle shot as a child, haunted by guilt."
+    },
+    {
+      "id": "felix-waltz",
+      "name": "Felix Waltz",
+      "primaryBook": "deadeye-dick",
+      "books": ["deadeye-dick"],
+      "description": "Rudy's father, an admirer of Hitler and failed artist who befriended him in Vienna, leaving the family with a firearms collection."
+    },
+    {
+      "id": "celia-hoover",
+      "name": "Celia Hoover",
+      "primaryBook": "deadeye-dick",
+      "books": ["deadeye-dick", "breakfast-of-champions"],
+      "description": "Dwayne Hoover's wife, a former drum majorette who becomes addicted to diet pills and dies by suicide, her tragedy woven into the fabric of Midland City."
+    },
+    {
       "id": "leon-trout",
       "name": "Leon Trout",
       "primaryBook": "galapagos",
@@ -306,6 +393,76 @@
       "primaryBook": "galapagos",
       "books": ["galapagos"],
       "description": "A widowed biology teacher who becomes the unlikely mother of humanity's next evolutionary branch on Santa Rosalia island."
+    },
+    {
+      "id": "zenji-hiroguchi",
+      "name": "Zenji Hiroguchi",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "A Japanese computer genius who created Mandarax, a hand-held translation and information device, killed in a terrorist attack in Ecuador before reaching the Galápagos."
+    },
+    {
+      "id": "hisako-hiroguchi",
+      "name": "Hisako Hiroguchi",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "Zenji's wife, a Kana calligraphy teacher who becomes one of the island's survivors; her daughter Akiko is born with a full coat of fur, the first step in humanity's new evolution."
+    },
+    {
+      "id": "captain-von-kleist",
+      "name": "Captain Adolf von Kleist",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "The hapless captain of the Bahía de Darwin, whose sperm — unknown to him — Mary Hepburn uses to inseminate the stranded women, making him the unwitting genetic father of the new human race."
+    },
+    {
+      "id": "james-wait",
+      "name": "James Wait",
+      "primaryBook": "galapagos",
+      "books": ["galapagos"],
+      "description": "A con man who preys on lonely wealthy women by marrying and robbing them; he books the ill-fated Galápagos cruise under a false name and dies on board."
+    },
+    {
+      "id": "wilbur-swain",
+      "name": "Wilbur Daffodil-11 Swain",
+      "primaryBook": "slapstick",
+      "books": ["slapstick"],
+      "description": "The last President of the United States, a grotesquely tall man who built a utopian extended-family program and now lives out his days in the ruins of the Empire State Building."
+    },
+    {
+      "id": "eliza-swain",
+      "name": "Eliza Mellon Swain",
+      "primaryBook": "slapstick",
+      "books": ["slapstick"],
+      "description": "Wilbur's twin sister, whose combined intellect with Wilbur constituted a single brilliant mind; separated from him by their parents, she dies in an avalanche in the Himalayas."
+    },
+    {
+      "id": "circe-berman",
+      "name": "Circe Berman",
+      "primaryBook": "bluebeard",
+      "books": ["bluebeard"],
+      "description": "A forceful young widow and bestselling author who moves into Rabo Karabekian's Long Island estate and relentlessly pushes him to write his autobiography and confront his past."
+    },
+    {
+      "id": "dan-gregory",
+      "name": "Dan Gregory",
+      "primaryBook": "bluebeard",
+      "books": ["bluebeard"],
+      "description": "Rabo's first mentor, the most celebrated American illustrator of the early twentieth century, a brilliant craftsman and ardent fascist who was killed fighting for Mussolini's Italy."
+    },
+    {
+      "id": "terry-kitchen",
+      "name": "Terry Kitchen",
+      "primaryBook": "bluebeard",
+      "books": ["bluebeard"],
+      "description": "Rabo's closest friend among the Abstract Expressionists, a gifted painter who accidentally killed himself and several others with an industrial paint sprayer."
+    },
+    {
+      "id": "eugene-hartke",
+      "name": "Eugene Debs Hartke",
+      "primaryBook": "hocus-pocus",
+      "books": ["hocus-pocus"],
+      "description": "A Vietnam veteran and physicist turned college professor at a school for the learning-disabled rich, then warden of a prison across the lake, who is ultimately convicted of inciting a prison break."
     },
     {
       "id": "monica-pepper",
@@ -352,6 +509,12 @@
       "target": "roland-weary",
       "book": "slaughterhouse-five",
       "description": "Weary drags Billy through the snow during capture, blaming him when he dies of gangrene in a POW boxcar."
+    },
+    {
+      "source": "billy-pilgrim",
+      "target": "barbara-pilgrim",
+      "book": "slaughterhouse-five",
+      "description": "Barbara is exasperated by her father's time-travel claims and tries to manage his increasingly erratic public behavior."
     },
     {
       "source": "paul-lazzaro",
@@ -420,6 +583,12 @@
       "description": "Harry is Dwayne's loyal sales manager; Dwayne's breakdown puts their professional relationship in crisis."
     },
     {
+      "source": "dwayne-hoover",
+      "target": "celia-hoover",
+      "book": "breakfast-of-champions",
+      "description": "Celia was Dwayne's wife; her suicide by Drano traumatized the family and deepened Dwayne's slide toward madness."
+    },
+    {
       "source": "kilgore-trout",
       "target": "rabo-karabekian",
       "book": "breakfast-of-champions",
@@ -436,6 +605,18 @@
       "target": "dwayne-hoover",
       "book": "breakfast-of-champions",
       "description": "Vonnegut observes Dwayne's unraveling throughout the novel as an authorial presence in Midland City."
+    },
+    {
+      "source": "rudy-waltz",
+      "target": "dwayne-hoover",
+      "book": "deadeye-dick",
+      "description": "Both are prominent residents of Midland City whose lives intersect in the shadow of the town's recurring tragedies."
+    },
+    {
+      "source": "rudy-waltz",
+      "target": "celia-hoover",
+      "book": "deadeye-dick",
+      "description": "Rudy and Celia Hoover move in the same Midland City circles; her death by suicide is one of the many tragedies that define the town."
     },
     {
       "source": "eliot-rosewater",
@@ -498,10 +679,22 @@
       "description": "Wirtanen recruits Howard as a spy and is the only person who can confirm Howard's innocence — but declines to testify."
     },
     {
+      "source": "howard-campbell",
+      "target": "dr-lionel-jones",
+      "book": "mother-night",
+      "description": "Jones idolizes Howard as a hero of white supremacy, oblivious to the fact that Howard's broadcasts were a cover for Allied espionage."
+    },
+    {
       "source": "george-kraft",
       "target": "resi-noth",
       "book": "mother-night",
       "description": "Kraft and Resi are both Soviet agents working together in New York, using Howard Campbell for their own ends."
+    },
+    {
+      "source": "john-jonah",
+      "target": "felix-hoenikker",
+      "book": "cats-cradle",
+      "description": "John's entire investigation begins with Felix — researching the bomb scientist's life reveals the existence of ice-nine and eventually brings John to San Lorenzo."
     },
     {
       "source": "john-jonah",
@@ -534,6 +727,42 @@
       "description": "John meets 'Papa' on his deathbed; Papa uses ice-nine to commit suicide, causing worldwide catastrophe."
     },
     {
+      "source": "john-jonah",
+      "target": "julian-castle",
+      "book": "cats-cradle",
+      "description": "John visits Julian's jungle hospital on San Lorenzo, where the cynical philanthropist gives him a sardonic tour of suffering and charity."
+    },
+    {
+      "source": "john-jonah",
+      "target": "philip-castle",
+      "book": "cats-cradle",
+      "description": "John meets Philip at the Casa Mona hotel; Philip's hand-written history of San Lorenzo becomes one of John's key sources."
+    },
+    {
+      "source": "julian-castle",
+      "target": "philip-castle",
+      "book": "cats-cradle",
+      "description": "Julian and his son Philip are estranged in temperament — Julian pities the poor while Philip aestheticizes their suffering — but both are devoted Bokononists."
+    },
+    {
+      "source": "felix-hoenikker",
+      "target": "frank-hoenikker",
+      "book": "cats-cradle",
+      "description": "Felix's neglect shaped Frank entirely; Frank idolized his brilliant, oblivious father and inherited a chip of the ice-nine that could end the world."
+    },
+    {
+      "source": "felix-hoenikker",
+      "target": "angela-hoenikker",
+      "book": "cats-cradle",
+      "description": "Angela devoted her childhood to caring for her helpless, brilliant father, surrendering her own life to his; she too carried a fragment of ice-nine."
+    },
+    {
+      "source": "felix-hoenikker",
+      "target": "newt-hoenikker",
+      "book": "cats-cradle",
+      "description": "Felix barely acknowledged Newt's existence; on the morning he showed Newt cat's cradle, he was already thinking about the substance that would doom the world."
+    },
+    {
       "source": "frank-hoenikker",
       "target": "papa-monzano",
       "book": "cats-cradle",
@@ -562,6 +791,24 @@
       "target": "beatrice-rumfoord",
       "book": "sirens-of-titan",
       "description": "Malachi and Beatrice are manipulated into becoming mates on Mars; they have a son and eventually find peace on Titan."
+    },
+    {
+      "source": "malachi-constant",
+      "target": "boaz",
+      "book": "sirens-of-titan",
+      "description": "Boaz and Malachi (as 'Unk') are paired as soldier-companions on Mars; they escape together in a rocket and land on Mercury, where Boaz chooses to stay."
+    },
+    {
+      "source": "malachi-constant",
+      "target": "chrono",
+      "book": "sirens-of-titan",
+      "description": "Chrono is Malachi's son, born on Mars; estranged from his parents, he becomes an object of veneration on Earth before vanishing with birds."
+    },
+    {
+      "source": "beatrice-rumfoord",
+      "target": "chrono",
+      "book": "sirens-of-titan",
+      "description": "Beatrice is Chrono's mother; their relationship is distant and strange, shaped entirely by Rumfoord's manipulations."
     },
     {
       "source": "winston-rumfoord",
@@ -594,6 +841,24 @@
       "description": "Ed reappears in Paul's life as a dropout from the system, encouraging Paul to question everything and eventually rebel."
     },
     {
+      "source": "paul-proteus",
+      "target": "reverend-lasher",
+      "book": "player-piano",
+      "description": "Lasher recruits Paul to become the symbolic figurehead of the Ghost Shirt Society, exploiting his prestige as a disaffected engineer-hero."
+    },
+    {
+      "source": "paul-proteus",
+      "target": "shah-of-bratpuhr",
+      "book": "player-piano",
+      "description": "The Shah tours Paul's automated world and cuts through its ideology with blunt questions that expose the hollowness Paul has begun to feel himself."
+    },
+    {
+      "source": "ed-finnerty",
+      "target": "reverend-lasher",
+      "book": "player-piano",
+      "description": "Finnerty and Lasher are co-conspirators in the Ghost Shirt Society, united by their rejection of the machine-run society."
+    },
+    {
       "source": "rudy-waltz",
       "target": "felix-waltz",
       "book": "deadeye-dick",
@@ -612,6 +877,18 @@
       "description": "Walter and Mary Kathleen were college sweethearts separated by class and circumstance; he discovers she is secretly the world's most powerful businesswoman."
     },
     {
+      "source": "walter-starbuck",
+      "target": "ruth-starbuck",
+      "book": "jailbird",
+      "description": "Ruth was Walter's devoted wife, a Holocaust survivor who died while he was imprisoned for Watergate; her memory and moral example haunt him throughout."
+    },
+    {
+      "source": "walter-starbuck",
+      "target": "leland-clewes",
+      "book": "jailbird",
+      "description": "Walter named Leland as a Communist before HUAC, destroying his career; they meet again years later as both men try to reconstruct their ruined lives."
+    },
+    {
       "source": "kilgore-trout",
       "target": "walter-starbuck",
       "book": "jailbird",
@@ -624,10 +901,76 @@
       "description": "Leon's ghost narrates Mary's story across a million years; she becomes the unwitting matriarch of humanity's next form."
     },
     {
+      "source": "leon-trout",
+      "target": "zenji-hiroguchi",
+      "book": "galapagos",
+      "description": "Leon witnesses Zenji's death in the Ecuadorian chaos and understands it as one of the big-brained accidents that the new evolution will eventually leave behind."
+    },
+    {
+      "source": "leon-trout",
+      "target": "james-wait",
+      "book": "galapagos",
+      "description": "Leon narrates James Wait's life and death aboard the Bahía de Darwin, seeing his con-man existence as a tragicomic symptom of the oversized human brain."
+    },
+    {
+      "source": "mary-hepburn",
+      "target": "hisako-hiroguchi",
+      "book": "galapagos",
+      "description": "Mary and Hisako become the core of the island's small colony of women; Hisako's furry daughter Akiko represents the evolutionary future Mary's biology lessons helped create."
+    },
+    {
+      "source": "mary-hepburn",
+      "target": "captain-von-kleist",
+      "book": "galapagos",
+      "description": "Mary secretly uses the Captain's sperm to inseminate herself and the other stranded women, making him the unwitting progenitor of the entire future human species."
+    },
+    {
+      "source": "mary-hepburn",
+      "target": "james-wait",
+      "book": "galapagos",
+      "description": "Wait dies at sea while briefly married to Mary; his death marks the end of his predatory old-world life and the beginning of the survivors' isolation."
+    },
+    {
+      "source": "zenji-hiroguchi",
+      "target": "hisako-hiroguchi",
+      "book": "galapagos",
+      "description": "Zenji and Hisako are a devoted couple; his death before reaching the Galápagos leaves Hisako to face the island's strange future alone and pregnant."
+    },
+    {
       "source": "kilgore-trout",
       "target": "leon-trout",
       "book": "galapagos",
       "description": "Kilgore Trout's ghost briefly appears to Leon, his son, offering him a chance to pass through the blue tunnel to the afterlife."
+    },
+    {
+      "source": "wilbur-swain",
+      "target": "eliza-swain",
+      "book": "slapstick",
+      "description": "Together Wilbur and Eliza are a secret genius — apart they are each merely ordinary; their separation by well-meaning adults dooms both and haunts Wilbur for the rest of his life."
+    },
+    {
+      "source": "rabo-karabekian",
+      "target": "circe-berman",
+      "book": "bluebeard",
+      "description": "Circe moves into Rabo's estate and, through a mix of provocation and genuine curiosity, compels him to write his memoirs and ultimately reveal the massive secret painting in his barn."
+    },
+    {
+      "source": "rabo-karabekian",
+      "target": "dan-gregory",
+      "book": "bluebeard",
+      "description": "Dan was Rabo's first master — Rabo idolized him and worked as his assistant, learning technical brilliance before Gregory's fascism and cruelty drove them apart."
+    },
+    {
+      "source": "rabo-karabekian",
+      "target": "terry-kitchen",
+      "book": "bluebeard",
+      "description": "Terry was Rabo's closest friend in the Abstract Expressionist movement; his accidental death with a paint sprayer haunted Rabo and shaped his retreat from the art world."
+    },
+    {
+      "source": "dan-gregory",
+      "target": "terry-kitchen",
+      "book": "bluebeard",
+      "description": "Both men are part of the New York art world that shaped Rabo, though from different eras and with opposing aesthetics — Gregory the reactionary master, Kitchen the avant-garde rebel."
     },
     {
       "source": "kilgore-trout",
