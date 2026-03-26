@@ -1,0 +1,186 @@
+.page {
+  min-height: 100vh;
+  background: #111;
+  color: #f0f0f0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+.nav {
+  padding: 20px 24px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.backLink {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.backLink:hover {
+  color: #ccc;
+}
+
+.notFound {
+  padding: 40px 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.header {
+  padding: 40px 24px 32px;
+  max-width: 720px;
+}
+
+.accent {
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0f0f0;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.year {
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+}
+
+.synopsis {
+  margin: 20px 0 0;
+  font-size: 15px;
+  color: #999;
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+.section {
+  padding: 0 24px 40px;
+  max-width: 720px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 16px;
+}
+
+.characterGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.characterCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #161616;
+  border: 1px solid #1e1e1e;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.characterCard:hover {
+  background: #1a1a1a;
+  border-color: #2a2a2a;
+}
+
+.characterDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.characterName {
+  font-size: 13px;
+  color: #ddd;
+  line-height: 1.3;
+}
+
+.interactionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interactionItem {
+  border-left: 2px solid #222;
+  padding-left: 16px;
+}
+
+.interactionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.characterLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  text-decoration: underline;
+  text-decoration-color: #333;
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.characterLink:hover {
+  color: #fff;
+  text-decoration-color: #888;
+}
+
+.arrow {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.interactionDesc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 32px 20px 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 0 20px 32px;
+  }
+
+  .characterGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

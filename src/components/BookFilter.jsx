@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './BookFilter.module.css';
 
 export default function BookFilter({ books, activeBooks, onToggleBook, isOpen, onClose }) {
@@ -18,6 +19,7 @@ export default function BookFilter({ books, activeBooks, onToggleBook, isOpen, o
           const isActive = allActive || activeBooks.has(book.id);
           return (
             <li key={book.id}>
+              <div className={styles.bookRow}>
               <button
                 className={`${styles.bookBtn} ${!isActive ? styles.inactive : ''}`}
                 onClick={() => onToggleBook(book.id)}
@@ -29,6 +31,8 @@ export default function BookFilter({ books, activeBooks, onToggleBook, isOpen, o
                 <span className={styles.title}>{book.title}</span>
                 <span className={styles.year}>{book.year}</span>
               </button>
+              <Link to={`/books/${book.id}`} className={styles.bookPageLink} title="View book page">→</Link>
+            </div>
             </li>
           );
         })}

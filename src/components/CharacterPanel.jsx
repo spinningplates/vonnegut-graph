@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './CharacterPanel.module.css';
 
 export default function CharacterPanel({ character, bookMap, graphData, onClose, onSelectCharacter }) {
@@ -16,7 +17,10 @@ export default function CharacterPanel({ character, bookMap, graphData, onClose,
         style={{ backgroundColor: bookMap[character.primaryBook]?.color ?? '#888' }}
       />
 
-      <h2 className={styles.name}>{character.name}</h2>
+      <div className={styles.nameRow}>
+        <h2 className={styles.name}>{character.name}</h2>
+        <Link to={`/characters/${character.id}`} className={styles.pageLink}>View page →</Link>
+      </div>
       <p className={styles.description}>{character.description}</p>
 
       <section className={styles.section}>
@@ -30,7 +34,7 @@ export default function CharacterPanel({ character, bookMap, graphData, onClose,
                   className={styles.bookDot}
                   style={{ backgroundColor: book.color }}
                 />
-                <span className={styles.bookTitle}>{book.title}</span>
+                <Link to={`/books/${bookId}`} className={styles.bookTitle}>{book.title}</Link>
                 <span className={styles.bookYear}>{book.year}</span>
               </li>
             ) : null;

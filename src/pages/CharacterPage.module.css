@@ -1,0 +1,200 @@
+.page {
+  min-height: 100vh;
+  background: #111;
+  color: #f0f0f0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+.nav {
+  padding: 20px 24px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.backLink {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.backLink:hover {
+  color: #ccc;
+}
+
+.notFound {
+  padding: 40px 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.header {
+  padding: 40px 24px 32px;
+  max-width: 720px;
+}
+
+.accent {
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0f0f0;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.primaryBookLink {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 20px;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.primaryBookLink:hover {
+  opacity: 1;
+}
+
+.description {
+  font-size: 15px;
+  color: #999;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 600px;
+}
+
+.section {
+  padding: 0 24px 40px;
+  max-width: 720px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 16px;
+}
+
+.bookList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bookItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #161616;
+  border: 1px solid #1e1e1e;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.bookItem:hover {
+  background: #1a1a1a;
+  border-color: #2a2a2a;
+}
+
+.bookDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bookTitle {
+  font-size: 14px;
+  color: #ddd;
+  flex: 1;
+}
+
+.bookYear {
+  font-size: 12px;
+  color: #555;
+}
+
+.interactionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interactionItem {
+  border-left: 2px solid #222;
+  padding-left: 16px;
+}
+
+.interactionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.characterLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  text-decoration: underline;
+  text-decoration-color: #333;
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.characterLink:hover {
+  color: #fff;
+  text-decoration-color: #888;
+}
+
+.bookTag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.bookTag:hover {
+  opacity: 0.8;
+}
+
+.interactionDesc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 32px 20px 24px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 0 20px 32px;
+  }
+}
