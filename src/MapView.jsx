@@ -1,29 +1,19 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import Graph from './components/Graph';
-import CharacterPanel from './components/CharacterPanel';
+import LocationMap from './components/LocationMap';
+import CosmosView from './components/CosmosView';
+import LocationPanel from './components/LocationPanel';
 import BookFilter from './components/BookFilter';
 import data from './data/vonnegut.json';
-import './App.css';
 import styles from './MapView.module.css';
 
 const bookMap = Object.fromEntries(data.books.map(b => [b.id, b]));
+const characterMap = Object.fromEntries(data.characters.map(c => [c.id, c]));
 
-export default function GraphView() {
-  const [selectedCharacter, setSelectedCharacter] = useState(null);
+export default function MapView() {
+  const [selectedLocation, setSelectedLocation] = useState(null);
   const [activeBooks, setActiveBooks] = useState(new Set());
   const [showFilter, setShowFilter] = useState(false);
-
-  const graphData = useMemo(() => {
-    const nodes = data.characters.map(c => ({ ...c }));
-    const nodeMap = Object.fromEntries(nodes.map(n => [n.id, n]));
-    const links = data.interactions.map(i => ({
-      ...i,
-      source: nodeMap[i.source],
-      target: nodeMap[i.target],
-    })).filter(l => l.source && l.target);
-    return { nodes, links };
-  }, []);
 
   const handleToggleBook = (bookId) => {
     if (bookId === null) {
@@ -36,16 +26,10 @@ export default function GraphView() {
       else next.add(bookId);
       return next;
     });
-    setSelectedCharacter(null);
   };
 
-  const handleSelectCharacter = (character) => {
-    setSelectedCharacter(character);
-  };
-
-  const handleSelectByNode = (node) => {
-    const fullNode = graphData.nodes.find(n => n.id === node.id);
-    setSelectedCharacter(fullNode ?? null);
+  const handleSelectLocation = (loc) => {
+    setSelectedLocation(prev => prev?.id === loc.id ? null : loc);
   };
 
   return (
@@ -66,29 +50,38 @@ export default function GraphView() {
         <header className={styles.header}>
           <div className={styles.titleGroup}>
             <h1 className={styles.title}>Vonnegut Universe</h1>
-            <p className={styles.subtitle}>Characters &amp; connections across the novels</p>
+            <p className={styles.subtitle}>Where the stories happened</p>
           </div>
           <nav className={styles.tabs}>
-            <span className={`${styles.tab} ${styles.tabActive}`}>Graph</span>
-            <Link to="/map" className={styles.tab}>Map</Link>
+            <Link to="/" className={styles.tab}>Graph</Link>
+            <span className={`${styles.tab} ${styles.tabActive}`}>Map</span>
           </nav>
         </header>
 
-        <Graph
-          graphData={graphData}
+        <div className={styles.mapContainer}>
+          <LocationMap
+            locations={data.locations}
+            bookMap={bookMap}
+            activeBooks={activeBooks}
+            onSelectLocation={handleSelectLocation}
+            selectedLocation={selectedLocation}
+          />
+        </div>
+
+        <CosmosView
+          locations={data.locations}
           bookMap={bookMap}
           activeBooks={activeBooks}
-          onSelectCharacter={handleSelectCharacter}
-          selectedCharacter={selectedCharacter}
+          onSelectLocation={handleSelectLocation}
+          selectedLocation={selectedLocation}
         />
       </div>
 
-      <CharacterPanel
-        character={selectedCharacter}
+      <LocationPanel
+        location={selectedLocation}
         bookMap={bookMap}
-        graphData={graphData}
-        onClose={() => setSelectedCharacter(null)}
-        onSelectCharacter={handleSelectByNode}
+        characterMap={characterMap}
+        onClose={() => setSelectedLocation(null)}
       />
 
       <button

@@ -984,5 +984,134 @@
       "book": "timequake",
       "description": "Vonnegut writes himself into Timequake as Trout's nephew-like companion, blurring the boundary between author and creation."
     }
+  ],
+  "locations": [
+    {
+      "id": "illium-ny",
+      "name": "Illium, NY",
+      "type": "fictional-earth",
+      "lat": 42.7284,
+      "lng": -73.6918,
+      "realWorldNote": "Vonnegut's stand-in for Schenectady, NY, where he worked at General Electric after the war",
+      "books": ["player-piano", "slaughterhouse-five"],
+      "characters": ["paul-proteus", "anita-proteus", "ed-finnerty", "reverend-lasher", "billy-pilgrim", "valencia-merble", "barbara-pilgrim"]
+    },
+    {
+      "id": "midland-city",
+      "name": "Midland City",
+      "type": "fictional-earth",
+      "lat": 39.7684,
+      "lng": -86.1581,
+      "realWorldNote": "A fictional Midwest city inspired loosely by Indianapolis, Vonnegut's birthplace",
+      "books": ["breakfast-of-champions", "deadeye-dick"],
+      "characters": ["dwayne-hoover", "francine-pefko", "bunny-hoover", "harry-lesabre", "kilgore-trout", "rabo-karabekian", "kurt-vonnegut", "celia-hoover", "rudy-waltz", "felix-waltz"]
+    },
+    {
+      "id": "rosewater-indiana",
+      "name": "Rosewater, Indiana",
+      "type": "fictional-earth",
+      "lat": 40.1934,
+      "lng": -85.3864,
+      "realWorldNote": "A fictional small Indiana county representing America's forgotten rural working class",
+      "books": ["god-bless-you"],
+      "characters": ["eliot-rosewater", "sylvia-rosewater", "kilgore-trout", "norman-mushari", "fred-rosewater"]
+    },
+    {
+      "id": "san-lorenzo",
+      "name": "San Lorenzo",
+      "type": "fictional-earth",
+      "lat": 17.1274,
+      "lng": -61.8468,
+      "realWorldNote": "A fictional Caribbean island, inspired loosely by Haiti and other small post-colonial island nations",
+      "books": ["cats-cradle"],
+      "characters": ["john-jonah", "frank-hoenikker", "mona-monzano", "papa-monzano", "bokonon", "julian-castle", "philip-castle"]
+    },
+    {
+      "id": "scipio-ny",
+      "name": "Scipio, NY",
+      "type": "fictional-earth",
+      "lat": 42.7,
+      "lng": -76.6,
+      "realWorldNote": "A fictional upstate New York town, home to Tarkington College for the learning-disabled wealthy and Athena prison across the lake",
+      "books": ["hocus-pocus"],
+      "characters": ["eugene-hartke"]
+    },
+    {
+      "id": "dresden",
+      "name": "Dresden, Germany",
+      "type": "real",
+      "lat": 51.0504,
+      "lng": 13.7373,
+      "books": ["slaughterhouse-five"],
+      "characters": ["billy-pilgrim", "edgar-derby", "paul-lazzaro", "roland-weary", "kurt-vonnegut"]
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin, Germany",
+      "type": "real",
+      "lat": 52.52,
+      "lng": 13.405,
+      "books": ["mother-night"],
+      "characters": ["howard-campbell", "helga-noth", "frank-wirtanen"]
+    },
+    {
+      "id": "new-york-city",
+      "name": "New York City",
+      "type": "real",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "books": ["mother-night", "slapstick", "jailbird"],
+      "characters": ["howard-campbell", "george-kraft", "resi-noth", "dr-lionel-jones", "wilbur-swain", "walter-starbuck", "mary-kathleen", "leland-clewes"]
+    },
+    {
+      "id": "long-island",
+      "name": "Long Island, NY",
+      "type": "real",
+      "lat": 40.9849,
+      "lng": -72.6151,
+      "books": ["bluebeard"],
+      "characters": ["rabo-karabekian", "circe-berman"]
+    },
+    {
+      "id": "galapagos-islands",
+      "name": "Galápagos Islands",
+      "type": "real",
+      "lat": -0.9538,
+      "lng": -90.9656,
+      "books": ["galapagos"],
+      "characters": ["leon-trout", "mary-hepburn", "hisako-hiroguchi", "captain-von-kleist", "james-wait"]
+    },
+    {
+      "id": "tralfamadore",
+      "name": "Tralfamadore",
+      "type": "off-world",
+      "description": "A planet in the Small Magellanic Cloud, 446,120,000,000,000,000 miles from Earth. Tralfamadorians perceive all moments in time simultaneously — there is no death, only moments that always will have been.",
+      "books": ["slaughterhouse-five", "sirens-of-titan"],
+      "characters": ["billy-pilgrim", "montana-wildhack", "salo", "winston-rumfoord"]
+    },
+    {
+      "id": "titan",
+      "name": "Titan",
+      "type": "off-world",
+      "description": "Saturn's largest moon and the final destination of Rumfoord's grand cosmic scheme. Home to the stranded Tralfamadorian robot Salo, who waited millennia for a replacement part the size of a can opener.",
+      "books": ["sirens-of-titan"],
+      "characters": ["malachi-constant", "winston-rumfoord", "beatrice-rumfoord", "salo", "chrono"]
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "type": "off-world",
+      "description": "Secretly colonized by Rumfoord as a staging ground for a doomed invasion of Earth — engineered to manufacture a new world religion through spectacular, purposeful defeat.",
+      "books": ["sirens-of-titan"],
+      "characters": ["malachi-constant", "beatrice-rumfoord", "boaz", "chrono"]
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "type": "off-world",
+      "description": "A hollow planet filled with harmoniums — creatures that feed on vibrations and spell out 'We love you, Boaz' with their bodies. Boaz discovers he is genuinely needed here, and chooses to stay.",
+      "books": ["sirens-of-titan"],
+      "characters": ["malachi-constant", "boaz"]
+    }
   ]
 }

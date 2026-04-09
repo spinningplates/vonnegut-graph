@@ -1,0 +1,96 @@
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper :global(.leaflet-container) {
+  background: #0d0d14;
+}
+
+.wrapper :global(.leaflet-tooltip) {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e0e0e0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+}
+
+.wrapper :global(.leaflet-tooltip::before) {
+  border-top-color: #333;
+}
+
+.wrapper :global(.leaflet-control-zoom) {
+  border: 1px solid #2a2a2a !important;
+  box-shadow: none !important;
+}
+
+.wrapper :global(.leaflet-control-zoom a) {
+  background: #1a1a1a !important;
+  color: #888 !important;
+  border-color: #2a2a2a !important;
+}
+
+.wrapper :global(.leaflet-control-zoom a:hover) {
+  background: #222 !important;
+  color: #ccc !important;
+}
+
+.wrapper :global(.leaflet-control-attribution) {
+  background: rgba(17, 17, 17, 0.7) !important;
+  color: #444 !important;
+  font-size: 10px !important;
+}
+
+.wrapper :global(.leaflet-control-attribution a) {
+  color: #555 !important;
+}
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tooltipName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.tooltipType {
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.legend {
+  position: absolute;
+  bottom: 28px;
+  left: 12px;
+  display: flex;
+  gap: 14px;
+  background: rgba(17, 17, 17, 0.85);
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 6px 12px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #888;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

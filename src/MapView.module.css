@@ -1,0 +1,84 @@
+.mapArea {
+  flex: 1;
+  margin-left: 260px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 24px;
+  border-bottom: 1px solid #1e1e1e;
+  background: #111;
+  z-index: 10;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e0e0e0;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #444;
+}
+
+.tabs {
+  display: flex;
+  gap: 2px;
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.tab {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+  padding: 5px 14px;
+  border-radius: 5px;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #ccc;
+}
+
+.tabActive {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.mapContainer {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .mapArea {
+    margin-left: 0;
+  }
+
+  .subtitle {
+    display: none;
+  }
+}

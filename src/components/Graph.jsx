@@ -4,11 +4,12 @@ import ForceGraph2D from 'react-force-graph-2d';
 export default function Graph({ graphData, bookMap, activeBooks, onSelectCharacter, selectedCharacter }) {
   const fgRef = useRef();
   const [hoveredNode, setHoveredNode] = useState(null);
-  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const HEADER = 58;
+  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight - HEADER });
 
   useEffect(() => {
     const handleResize = () => {
-      setDimensions({ width: window.innerWidth, height: window.innerHeight });
+      setDimensions({ width: window.innerWidth, height: window.innerHeight - HEADER });
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
